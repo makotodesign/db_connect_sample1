@@ -1,7 +1,7 @@
 <?php 
 include('dbh.php');
 $stmt=$dbh->query('SELECT * FROM posts ORDER BY time DESC LIMIT 5');
-
+$dbh=null;
 ?>
 
 <!DOCTYPE html>
