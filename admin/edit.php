@@ -20,6 +20,7 @@ return htmlspecialchars($v,ENT_QUOTES);
 </head>
 <body>
 <div class="container">
+   <div class="content">
     <h1 class="maintitle">投稿を編集します</h1>
     <form action="edit_confirm.php" method="post" class="input">
     	<?php foreach($stmt AS $row):?>
@@ -40,7 +41,7 @@ return htmlspecialchars($v,ENT_QUOTES);
     <button onClick="location.href='index.php'">管理画面トップに戻る</botton>
     
     
-            
+    </div>       
 </div>
 </body>
 </html>
