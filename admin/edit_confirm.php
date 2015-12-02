@@ -3,6 +3,9 @@ session_start();
 $editid=$_SESSION['editid'];
 $title=h($_POST['edit_title']);
 $content=strip_tags($_POST['edit_content']);
+$content=nl2br($content);
+$content=strip_tags($content,'<br>');
+
 include '../dbh.php';
 $stmt=$dbh->prepare('UPDATE posts SET title=:edittitle,content=:editcontent WHERE id=:id');
 $stmt->execute(array(
