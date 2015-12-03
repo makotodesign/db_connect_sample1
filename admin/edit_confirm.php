@@ -2,8 +2,7 @@
 session_start();
 $editid=$_SESSION['editid'];
 $title=h($_POST['edit_title']);
-$content=strip_tags($_POST['edit_content']);
-$content=nl2br($content);
+$content=nl2br($_POST['edit_content']);
 $content=strip_tags($content,'<br>');
 
 include '../dbh.php';

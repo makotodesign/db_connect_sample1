@@ -30,7 +30,7 @@ return htmlspecialchars($v,ENT_QUOTES);
             </p>
             <p>
             <label for="edit_title">内容</label><br>
-                <textarea name="edit_content" class="input_textarea"><?php echo $row['content'];?></textarea><br>
+                <textarea name="edit_content" class="input_textarea"><?php echo str_replace('<br>','\r\n',$row['content']);?></textarea><br>
             </p>
         <?php endforeach;?>	    
             <p>
