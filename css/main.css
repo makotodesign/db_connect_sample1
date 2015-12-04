@@ -245,5 +245,22 @@ background-color:#c35a0d;
 	margin-bottom:10px;
 }
 
+/*個別投稿style*/
+.detail{
+min-height: 500px;
+padding: 40px;    
+}
+
+.detailtitle {
+font-size:2rem;    
+margin-bottom: 20px;   
+}
+
+.detailcontent {
+font-size:1.3rem;    
+margin-bottom: 20px;    
+}
+
+
 
 

@@ -37,7 +37,7 @@ $dbh=null;
 	</header>
 	<nav id="nav" class="main_nav clearfix">
 		<ul>
-		<li><a href="">menu</a></li>
+		<li><a href="#">top</a></li>
 		<li><a href="">menu</a></li>
 		<li><a href="">menu</a></li>
 		<li><a href="">menu</a></li>
@@ -54,10 +54,10 @@ $dbh=null;
                     	<ul>
                         <?php foreach($stmt AS $row): 
                         	$utime=strtotime($row['time']);
-                 
-                        
                         ?>
-                         <li class="news_list">【<?php echo $row['title'];?>】----更新日時(<?php echo date('Y年m月H時m分',$utime);?>)</li>
+                        <a href="detail.php?id=<?php echo $row['id'];?>">
+                            <li class="news_list">【<?php echo $row['title'];?>】----更新日時(<?php echo date('y年m月d日H時i分',$utime);?>)</li>
+                        </a> 
                         
                         <?php endforeach;?>
                         
